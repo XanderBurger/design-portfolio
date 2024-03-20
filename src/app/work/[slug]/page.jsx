@@ -1,9 +1,12 @@
 import React from 'react'
 import {getWorkImages} from "../getImages"
 
+import Image from 'next/image'
+
 export default function Work({params}) {
    
    const images = getWorkImages(params.slug)
+   console.log(images)
   
   return (
     <div className='mt-[100px] mx-[40px]'>
@@ -12,7 +15,13 @@ export default function Work({params}) {
     {images.map( i => {
         return(
         <div>
-           <img className='min-w-[500px] max-h-[400px]' key={i.src} src={i.src}/>
+           <Image
+           className='min-w-[500px]'
+           width={500}
+           height={400}
+           key={i.src} 
+           src={i.src}
+           />
            </div>
         )
     })
