@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${ibm_plex_sans.variable} font-IBMPlex`}>
         <Header/>
-         
           <div>
             {children}
           </div>

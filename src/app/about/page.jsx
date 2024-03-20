@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-[20px] text-[32px]">
+    <div className="mx-[40px] my-[100px] text-[32px] max-w-[800px]">
       <p>
       With degrees in both computer science and graphic design, my work investigates how code can be used to generate better visual communication. Using code to automate aesthetic processes and condensing substantial data sets into information humans can understand.
       </p>
