@@ -1,5 +1,5 @@
 "use client"
-import { ReactP5Wrapper } from "@p5-wrapper/react";
+import { NextReactP5Wrapper } from "@p5-wrapper/next";
 
 export default function Sketch({backgroundColor, frameRate}){
     
@@ -221,5 +221,5 @@ export default function Sketch({backgroundColor, frameRate}){
 
     }
 
-    return <ReactP5Wrapper sketch={drawing} />
+    return <NextReactP5Wrapper sketch={drawing} />
 }

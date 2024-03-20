@@ -1,7 +1,11 @@
+
 import "./globals.css";
-import Header from "./components/header";
+//import Header from "./components/header";
 import Footer from "./components/footer"
 import {IBM_Plex_Sans} from "next/font/google"
+import dynamic from 'next/dynamic';
+
+const Header = dynamic(() => import('./components/header'), {ssr: false})
 
 const ibm_plex_sans = IBM_Plex_Sans({
   weight: ['100', '200', '300', '400', '500', '600', '700'],

@@ -5,14 +5,11 @@ import NameLogo from "../assets/images/svgs/nameLogo.svg"
 import Menu from "../assets/images/svgs/menu.svg"
 import NavLink from "./NavLink"
 import { useState, useEffect } from "react"
-import { Shojumaru } from "next/font/google"
 
 
 export default function Header() {
-
   const [hideMenu, setHideMenu] = useState(false)
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
