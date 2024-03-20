@@ -13,12 +13,11 @@ export default function Work({params}) {
     <div className='grid grid-flow-col overflow-y-scroll '>
     {images.map( i => {
         return(
-        <div>
+        <div key={i}>
            <Image
            className='min-w-[500px]'
            width={500}
            height={400}
-           key={i} 
            src={i}
            />
            </div>
