@@ -11,9 +11,9 @@ export default function Work({params}) {
     <div className='mt-[100px] mx-[40px]'>
     <h1 className='uppercase pb-4 text-hot-pink text-[42px]'>sevileta nwr</h1>
     <div className='grid grid-flow-col overflow-y-scroll '>
-    {images.map( i => {
+    {images.map( (i, e) => {
         return(
-        <div key={i}>
+        <div key={e}>
            <Image
            className='min-w-[500px]'
            width={500}
