@@ -5,9 +5,8 @@ import Image from 'next/image'
 
 export default function Work({params}) {
    
-   const images = getWorkImages(params.slug)
-   console.log(images)
-  
+      const images = getWorkImages(params.slug)
+
   return (
     <div className='mt-[100px] mx-[40px]'>
     <h1 className='uppercase pb-4 text-hot-pink text-[42px]'>sevileta nwr</h1>
@@ -19,8 +18,8 @@ export default function Work({params}) {
            className='min-w-[500px]'
            width={500}
            height={400}
-           key={i.src} 
-           src={i.src}
+           key={i} 
+           src={i}
            />
            </div>
         )
