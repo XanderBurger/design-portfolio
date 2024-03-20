@@ -1,7 +1,7 @@
-import mainSev from "../assets/images/sev/sevProjectCorrected70.png"
-import sketch1 from "../assets/images/sev/sevSketch1.png"
-import sketch2 from "../assets/images/sev/sevSketch2.png"
-import sketch3 from "../assets/images/sev/sevSketch3.png"
+import mainSev from "@/app/assets/images/sev/sevProjectCorrected70.png"
+import sketch1 from "@/app/assets/images/sev/sevSketch1.png"
+import sketch2 from "@/app/assets/images/sev/sevSketch2.png"
+import sketch3 from "@/app/assets/images/sev/sevSketch3.png"
 
 
 //get images by route slug
