@@ -1,6 +1,15 @@
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer"
+import {IBM_Plex_Sans} from "next/font/google"
+
+const ibm_plex_sans = IBM_Plex_Sans({
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  style: ["normal", "italic"],
+  variable: '--font-ibm',
+})
 
 export const metadata = {
   title: "Xander Burger",
@@ -10,18 +19,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="font-IBMPlex font-normal">
+      <body className={`${ibm_plex_sans.variable} font-IBMPlex`}>
         <Header/>
-        <div className="grid mx-[40px] grid-cols-12 gap-[20px] h-[100vh]">
-          <div className="col-span-1 h-full border-r-[1px] border-solid border-black">
-          </div>
-          <div className="col-span-11 h-full">
+         
+          <div>
             {children}
           </div>
-        </div>
-        <div className="border-t-[1px] border-solid border-black h-[40px] w-screen fixed bottom-0">
-          
-        </div>      
       </body>
     </html>
   );

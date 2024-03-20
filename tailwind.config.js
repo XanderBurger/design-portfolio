@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import {fontFamily} from "tailwindcss/defaultTheme"
+
 module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,8 +10,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        IBMPlex: ['IBMPlex', 'sans-serif'],
-        IBMPlexItalic: ['IBMPlexItalic', 'sans-serif']
+        IBMPlex: ["var(--font-ibm)", 'sans-serif']
+      },
+      colors : {
+        'hot-pink': "#FF2CFA" 
       }
     },
   },

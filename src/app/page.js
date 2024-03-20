@@ -1,9 +1,9 @@
+import { redirect } from 'next/navigation'
+
 export default function Home() {
+  redirect('/work')
   return (
     <main>
-      <h1>
-        Xanders Portfolio
-      </h1>
     </main>
   );
 }
