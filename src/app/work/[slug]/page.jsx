@@ -27,7 +27,7 @@ export default function Work({params}) {
     
     </div>
     <div className='my-[40px]'>
-    <p className='text-[24px]'>
+    <p className='text-[24px] max-w-[800px]'>
     A project done in collaboration with the Sevilleta National Wildlife Refuge about the collection and transfer of digital ecological data.
     </p>
     </div>
