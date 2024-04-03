@@ -2,6 +2,7 @@
 import { withNextVideo } from "next-video/process";
 
 const nextConfig = {
+    reactStrictMode: false,
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/,

@@ -2,11 +2,11 @@
 import { NextReactP5Wrapper } from "@p5-wrapper/next";
 
 export default function Sketch({backgroundColor, frameRate}){
-    
+
     function drawing(p5){
     
-        const width = 1800
-        const height = 800
+        const width = p5.windowWidth
+        const height = p5.windowHeight
         const grid = createGrid(width/10, height/10)
     
         

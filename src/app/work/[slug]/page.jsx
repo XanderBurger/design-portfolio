@@ -1,36 +1,27 @@
 import React from 'react'
-import {getWorkImages} from "../getImages"
+import {getWorkInfo} from "../getWorkInfo"
+import { notFound } from 'next/navigation'
+import Carousel from '@/app/components/carousel'
+import dynamic from 'next/dynamic'
 
-import Image from 'next/image'
 
 export default function Work({params}) {
-   
-      const images = getWorkImages(params.slug)
+  
+
+  const info = getWorkInfo(params.slug)
+  if(!info) notFound()
 
   return (
-    <div className='mt-[100px] mx-[40px]'>
-    <h1 className='uppercase pb-4 text-hot-pink text-[42px]'>sevileta nwr</h1>
-    <div className='grid grid-flow-col overflow-y-scroll '>
-    {images.map( (i, e) => {
-        return(
-        <div key={e}>
-           <Image
-           className='min-w-[500px]'
-           width={500}
-           height={400}
-           src={i}
-           />
-           </div>
-        )
-    })
-    }
-    
+    <div className='mt-[100px]'>
+    <h1 className='uppercase pb-4 text-hot-pink text-[42px] mx-[40px]'>{info.title}</h1>
+    <div>
+    <Carousel images={info.images}/>
     </div>
-    <div className='my-[40px]'>
-    <p className='text-[24px] max-w-[800px]'>
-    A project done in collaboration with the Sevilleta National Wildlife Refuge about the collection and transfer of digital ecological data.
-    </p>
-    </div>
+      <div className='my-[40px]'>
+        <p className='text-[24px] max-w-[800px] mx-[40px]'>
+          {info.description}
+        </p>
+      </div>
     </div>
   )
 }
