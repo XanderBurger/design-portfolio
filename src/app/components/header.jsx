@@ -60,7 +60,7 @@ export default function Header() {
 
     const WorkLink = ({slug, name}) => {
       return (
-        <Link href={slug}>
+        <Link href={slug} onClick={()=> setShowMenu(false)}>
           <div className='border-b-solid border-b-[1px] ease-in-out duration-200 border-b-black w-full hover:bg-hot-pink hover:text-white '>
             <h1 className='ml-[20px] md:ml-[40px] text-[32px] py-4 uppercase'>
               {name}
