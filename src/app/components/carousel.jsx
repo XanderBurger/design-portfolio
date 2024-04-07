@@ -5,10 +5,13 @@ import { useEffect, useState, useRef, forwardRef, useCallback, useTransition} fr
 import Image from 'next/image'
 import Video from "next-video"
 
+
 export default function Carousel({images, videos}) {
     const imageCount = images.length + videos.length
     let currentIndex = 0
+    
     const api = useSpringRef()
+    const [stateTest, setStateTest] = useState()
     
     const spring = useSpring({
         ref: api,
@@ -41,11 +44,12 @@ export default function Carousel({images, videos}) {
     const CarouselImage = ({image, spring}) => {
 
         return (
-            <animated.div className='w-[100vw] px-[40px] grid justify-center items-center' style={spring} >
+            <animated.div className='w-[100vw] px-[20px] md:px-[40px] grid justify-center items-center relative' style={spring} >
                 <Image className='max-w-[1250px] max-h-[800px] w-full border-black border-[1px] rounded-md'
-                    width={3000}
-                    height={1200}
                     src={image}
+                    width={1920}
+                    height={1200}
+                    priority={true}
                     alt='Image of Work'
                 />
             </animated.div>
@@ -54,7 +58,7 @@ export default function Carousel({images, videos}) {
     
     const CarouselVideo = ({video, spring}) => {
         return (
-            <animated.div className='w-[100vw] px-[40px] h-min grid justify-center items-center' style={spring} >
+            <animated.div className='w-[100vw] px-[20px] md:px-[40px] h-min grid justify-center items-center' style={spring} >
                 <div className='rounded-md border-black border-[1px] overflow-hidden w-full'>
                 <Video className='max-w-[1250px] overflow-hidden' style={{width: "93vw"}}
                     src={video}
