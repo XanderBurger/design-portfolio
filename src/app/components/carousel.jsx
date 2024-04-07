@@ -45,7 +45,7 @@ export default function Carousel({images, videos}) {
 
         return (
             <animated.div className='w-[100vw] px-[20px] md:px-[40px] grid justify-center items-center relative' style={spring} >
-                <Image className='max-w-[1250px] max-h-[800px] w-full border-black border-[1px] rounded-md'
+                <Image className='max-w-[1250px] max-h-[800px] w-full bg-black border-black border-[1px] rounded-md'
                     src={image}
                     width={1920}
                     height={1200}
@@ -88,7 +88,7 @@ export default function Carousel({images, videos}) {
             )
         })}
         </div>
-        <div className='grid grid-flow-col w-full px-[40px] items-center'>
+        <div className='grid grid-flow-col w-full px-[20px] md:px-[40px] items-center'>
             <button className='text-[40px] hover:text-hot-pink text-start' onClick={handleLeft}>{'<'}</button>
             <button className='text-[40px] self-end hover:text-hot-pink text-end' onClick={handleRight}>{'>'}</button>
         </div>
