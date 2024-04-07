@@ -62,7 +62,7 @@ export default function Header() {
       return (
         <Link href={slug} onClick={()=> setShowMenu(false)}>
           <div className='border-b-solid border-b-[1px] ease-in-out duration-200 border-b-black w-full hover:bg-hot-pink hover:text-white '>
-            <h1 className='ml-[20px] md:ml-[40px] text-[32px] py-4 uppercase'>
+            <h1 className='ml-[20px] text-[24px] py-4 uppercase'>
               {name}
             </h1>
           </div>
@@ -73,8 +73,7 @@ export default function Header() {
     return (
     <>
     <div className="relative grid w-full h-[80px] grid-flow-col items-center bg-white z-20 ">
-      <div className="space-x-4 mx-[20px]"><Link href="/"><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px]">*</h1></Link></div>
-      {/* <Menu className="w-[40px] h-[80px] mx-[20px] justify-self-end pb-[20px] hover:fill-hot-pink" onClick={() => setShowMenu(!showMenu)}/> */}
+      <div className="space-x-4 mx-[20px]"><Link href="/" onClick={()=> setShowMenu(false)}><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px]">*</h1></Link></div>
       <h1 className='justify-self-end text-[60px] mx-[20px] mb-[20px] hover:text-hot-pink hover:cursor-pointer' onClick={() => setShowMenu(!showMenu)}>{showMenu ? "–" : "="}</h1>
     </div>
     <animated.div className='absolute bg-white top-[80px] w-full z-10' style={menuSpring}>

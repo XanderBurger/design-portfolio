@@ -13,7 +13,7 @@ export default function Work({params}) {
 
   return (
     <div className='mt-[100px]'>
-    <h1 className='uppercase pb-4 text-hot-pink text-[42px] mx-[20px] md:mx-[40px]'>{info.title}</h1>
+    <h1 className='uppercase pb-4 text-hot-pink text-[32px] leading-[35px] md:leading-[45px] md:text-[42px] mx-[20px] md:mx-[40px]'>{info.title}</h1>
     <div>
     <Carousel images={info.images} videos={info.videos}/>
     </div>
