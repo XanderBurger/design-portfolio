@@ -1,31 +1,25 @@
 'use client'
 import React from 'react'
 import { useSpring, useSpringRef, animated, useSpringValue } from '@react-spring/web'
-import { useEffect, useState, useRef, forwardRef} from 'react'
+import { useEffect, useState, useRef, forwardRef, useCallback, useTransition} from 'react'
 import Image from 'next/image'
 import Video from "next-video"
 
 export default function Carousel({images, videos}) {
     const imageCount = images.length + videos.length
     let currentIndex = 0
-    const [statetest, setStatetest] = useState(1)
-
-    
     const api = useSpringRef()
     
-
     const spring = useSpring({
         ref: api,
         from: {transform: `translateX(${(currentIndex * 100)}%)`}
     })
 
-    
-    
+
     const clamp = (n, min, max) => Math.min(Math.max(n, min), max)
    
     const handleLeft = () => {
        currentIndex = clamp(currentIndex + 1, -imageCount,0 )
-       console.log(currentIndex)
        api.start({
         to: {
             transform: `translateX(${(currentIndex * 100)}%)`
@@ -35,7 +29,6 @@ export default function Carousel({images, videos}) {
 
     const handleRight = () => {
         currentIndex = clamp(currentIndex - 1, -imageCount + 1,0 )
-        console.log(currentIndex)
         api.start({
             to: {
                 transform: `translateX(${(currentIndex * 100)}%)`
@@ -48,8 +41,8 @@ export default function Carousel({images, videos}) {
     const CarouselImage = ({image, spring}) => {
 
         return (
-            <animated.div className='w-[100vw] px-[40px] h-min grid justify-center items-center' style={spring} >
-                <Image className='max-w-[1250px] max-h-[90vh] w-full border-black border-[1px] rounded-md'
+            <animated.div className='w-[100vw] px-[40px] grid justify-center items-center' style={spring} >
+                <Image className='max-w-[1250px] max-h-[800px] w-full border-black border-[1px] rounded-md'
                     width={3000}
                     height={1200}
                     src={image}
@@ -72,7 +65,6 @@ export default function Carousel({images, videos}) {
             </animated.div>
         )
     }  
-
 
   return (
     <div className='w-full overflow-x-hidden'>
