@@ -22,16 +22,19 @@ export default function Home() {
         <Sketch backgroundColor={"#FFF"} frameRate={15}/>
       </div>
       <div className='h-screen w-full grid items-center justify-center cursor-none'>
-        <h1 className='text-[52px] lg:text-[72px] sm:text-[52px] font-[500] italic'>
+        <div>
+        <h1 className='text-[52px] lg:text-[72px] sm:text-[52px] font-[500] italic leading-[70px]'>
           Xander Burger
         </h1>
+        <p className='top-[60px] text-[20px] text-hot-pink'>*Click to Grow*</p>
+        </div>
       </div>
       <h1 className='uppercase ml-[40px] py-4 text-hot-pink text-[42px]'>WORK</h1>
       <div className='border-t-solid border-t-[1px] border-t-black grid grid-flow-row'>
         <WorkLink slug="/work/sev" name="Sevileta NWR"/>
         <WorkLink slug="/work/markup" name="Markup"/>
         <WorkLink slug="/work/tri" name="Toxic Release Inventory"/>
-        <WorkLink slug="/work/sev" name="American Computer & Robotics Museums"/>
+        <WorkLink slug="/work/acrm" name="American Computer & Robotics Museums"/>
       </div>
       
     </main>

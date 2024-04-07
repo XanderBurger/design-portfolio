@@ -15,7 +15,7 @@ export default function Work({params}) {
     <div className='mt-[100px]'>
     <h1 className='uppercase pb-4 text-hot-pink text-[42px] mx-[40px]'>{info.title}</h1>
     <div>
-    <Carousel images={info.images}/>
+    <Carousel images={info.images} videos={info.videos}/>
     </div>
       <div className='my-[40px]'>
         <p className='text-[24px] max-w-[800px] mx-[40px]'>
