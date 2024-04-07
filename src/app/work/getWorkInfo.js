@@ -14,7 +14,7 @@ const getWorkInfo = (slug) => {
       },
       "markup": {
          title: "Markup",
-         images: ["/markup/layoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout4.webp"],
+         images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout4.webp"],
          videos: [markupVid],
          description: "Submission to the RSA design awards"
       },
