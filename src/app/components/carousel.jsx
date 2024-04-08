@@ -59,7 +59,7 @@ export default function Carousel({images, videos}) {
     const CarouselVideo = ({video, spring}) => {
         return (
             <animated.div className='w-[100vw] px-[20px] md:px-[40px] h-min grid justify-center items-center' style={spring} >
-                <div className='rounded-md border-black border-[1px] overflow-hidden w-full'>
+                <div className='rounded-md border-black border-[1px] bg-black overflow-hidden w-full'>
                 <Video className='max-w-[1250px] overflow-hidden' style={{width: "93vw"}}
                     src={video}
                     autoPlay={true}
