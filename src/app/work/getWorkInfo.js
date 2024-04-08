@@ -69,7 +69,7 @@ const TRIDescription = () => {
       The TRI or Toxic Release Inventory is a program run by the EPA to provide transparency on how and where chemicals that are harmful to human health are released into the environment. The program requires facilities to report where, how, and what chemicals are being disposed of. This data is then gathered by the EPA and released to the public.
       </p>
       <br/>
-      <p>This project is a series of interactive visualizations made with the TRI's 21 datasets.</p>
+      <p>This project is a series of interactive visualizations made with the TRIs 21 datasets.</p>
       </>
    )
 
