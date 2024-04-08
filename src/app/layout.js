@@ -15,6 +15,11 @@ const ibm_plex_sans = IBM_Plex_Sans({
 export const metadata = {
   title: "Xander Burger",
   description: "Xander Burger's graphic design portfolio",
+  icons :{
+    icon: "/favicon.webp",
+    favicon: "/favicon.webp",
+    appleIcon: "favicon.webp"
+  }
 };
 
 export default function RootLayout({ children }) {

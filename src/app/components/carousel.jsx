@@ -45,7 +45,7 @@ export default function Carousel({images, videos}) {
 
         return (
             <animated.div className='w-[100vw] px-[20px] md:px-[40px] grid justify-center items-center relative ' style={spring} >
-                <Image className='max-w-[1250px] w-full max-h-[750px] bg-black border-black border-[1px] rounded-md object-contain'
+                <Image className='max-w-[1250px] w-full max-h-[650px] bg-black border-black border-[1px] rounded-md object-contain'
                     src={image}
                     width={3000}
                     height={1200}

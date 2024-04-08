@@ -18,9 +18,9 @@ export default function Work({params}) {
     <Carousel images={info.images} videos={info.videos}/>
     </div>
       <div className='my-[40px]'>
-        <p className='text-[24px] max-w-[800px] mx-[20px] md:mx-[40px]'>
+        <div className='text-[24px] max-w-[800px] mx-[20px] md:mx-[40px]'>
           {info.description}
-        </p>
+        </div>
       </div>
     </div>
   )
