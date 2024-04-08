@@ -15,7 +15,7 @@ const getWorkInfo = (slug) => {
       },
       "markup": {
          title: "Markup",
-         images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout4.webp"],
+         images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout-7.webp", "/markup/layout-6.webp"],
          videos: [markupVid],
          description: <MarkupDescription/>
       },
