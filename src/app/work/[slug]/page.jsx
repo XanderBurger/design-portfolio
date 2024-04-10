@@ -3,6 +3,7 @@ import {getWorkInfo} from "../getWorkInfo"
 import { notFound } from 'next/navigation'
 import Carousel from '@/app/components/carousel'
 import dynamic from 'next/dynamic'
+import Link from 'next/link'
 
 
 export default function Work({params}) {
@@ -18,10 +19,17 @@ export default function Work({params}) {
     <Carousel images={info.images} videos={info.videos}/>
     </div>
       <div className='my-[40px]'>
+        
         <div className='text-[24px] max-w-[800px] mx-[20px] md:mx-[40px]'>
           {info.description}
         </div>
+
+        <div className='grid grid-flow-col mx-[20px] md:mx-[40px] my-[40px]'> 
+        <Link className="uppercase hover:text-hot-pink font-medium text-[24px]" href={`/work/${info.prevPage}`}>Previous</Link>
+        <Link className="justify-self-end uppercase hover:text-hot-pink font-medium text-[24px]" href={`/work/${info.nextPage}`}>Next</Link>
+        </div>
       </div>
+      
     </div>
   )
 }

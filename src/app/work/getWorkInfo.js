@@ -11,25 +11,33 @@ const getWorkInfo = (slug) => {
       title: "Sevilleta NWR",
       images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp"],
       videos: [],
-      description: <SevDescription/>
+      description: <SevDescription/>,
+      prevPage: "acrm",
+      nextPage: "markup"
       },
       "markup": {
          title: "Markup",
          images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout-7.webp", "/markup/layout-6.webp"],
          videos: [markupVid],
-         description: <MarkupDescription/>
+         description: <MarkupDescription/>,
+         prevPage: "sev",
+         nextPage: "tri"
       },
       "tri": {
          title: "Toxic Release Inventory Visualization",
          images: ["/tri/tri1@300x.webp", "/tri/tri2@300x.webp", "/tri/tri3@300x.webp", "/tri/tri4@300x.webp", "/tri/tri5@300x.webp"],
          videos: [triVid],
-         description: <TRIDescription/>
+         description: <TRIDescription/>,
+         prevPage: "markup",
+         nextPage: "acrm"
       },
       "acrm": {
          title: "American Computer and Robotics Museum",
          images: ["/acrm/board.webp", "/acrm/bus.webp", "/acrm/car.webp"],
          videos: [acrmVid],
-         description: <ACRMDescription/>
+         description: <ACRMDescription/>,
+         prevPage: "tri",
+         nextPage: "sev"
       }
    }
    return info[slug]
