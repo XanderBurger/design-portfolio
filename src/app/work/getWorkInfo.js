@@ -1,14 +1,14 @@
 
 //get images by route slug
-import markupVid from "/videos/markup-vid.mov"
-import triVid from "/videos/tri-vid3.mov"
+import markupVid from "/videos/markup-vid2.mov"
+import triVid from "/videos/tri-vid4.mov"
 import acrmVid from "/videos/acrm-vid2.mov"
 
 
 const getWorkInfo = (slug) => {
    const info = {
     "sev" : {
-      title: "Sevilleta NWR",
+      title: "Sevilleta Digitized Landscape",
       images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp"],
       videos: [],
       description: <SevDescription/>,
@@ -24,7 +24,7 @@ const getWorkInfo = (slug) => {
          nextPage: "tri"
       },
       "tri": {
-         title: "Toxic Release Inventory Visualization",
+         title: "Interactive Dataset: the Toxic Release Inventory",
          images: ["/tri/tri1@300x.webp", "/tri/tri2@300x.webp", "/tri/tri3@300x.webp", "/tri/tri4@300x.webp", "/tri/tri5@300x.webp"],
          videos: [triVid],
          description: <TRIDescription/>,
@@ -70,7 +70,7 @@ const MarkupDescription = () => {
 const TRIDescription = () => {
    return (
       <>
-      <a href="https://tri-web-app.vercel.app/" className="underline hover:text-hot-pink">Project Link</a>
+      <a href="https://tri-web-app.vercel.app/" className="underline text-hot-pink hover:text-black">Project Link</a>
       <br/>
       <br/>
       <p>
@@ -86,11 +86,11 @@ const TRIDescription = () => {
 const ACRMDescription = () => {
    return (
       <>
-      <a href="https://xanderburger.github.io/ARCM-webApp/" className="underline hover:text-hot-pink">Project Link</a>
+      <a href="https://xanderburger.github.io/ARCM-webApp/" className="underline text-hot-pink hover:text-black">Project Link</a>
       <br/>
       <br/>
       <p>
-      A promotional campaign for the American Computer and Robotics Museum.
+      The American Computer and Robotics Museum is a gem in Bozeman Montana. It hosts some of the most significant artifacts in computing history ranging from World War 2 era Enigma Machines, early quantum computer chips, computers from the Apollo missions, and everything in between. This is a promotional campaign that contains a digital poster promoting the histories contained in the museum. 
       </p>
       </>
    )

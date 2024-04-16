@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Sketch from '../components/flowers';
 
 export default function Work() {
 
@@ -15,14 +16,19 @@ export default function Work() {
   }
 
   return (
+    <>
+      <div className='absolute h-screen w-full top-0 left-0 z-[-1] overflow-hidden cursor-none' >
+        <Sketch backgroundColor={"#FFF"} frameRate={15}/>
+      </div>
     <div className='absolute bottom-0 w-full'>
        <h1 className='uppercase md:ml-[40px] ml-[20px] py-4 text-hot-pink text-[32px] md:text-[42px]'>WORK</h1>
         <div className='border-t-solid border-t-[1px] border-t-black grid grid-flow-row'>
-          <WorkLink slug="/work/sev" name="Sevileta NWR"/>
+          <WorkLink slug="/work/sev" name="Sevilleta Digitized Landscape"/>
           <WorkLink slug="/work/markup" name="Markup"/>
-          <WorkLink slug="/work/tri" name="Toxic Release Inventory"/>
-          <WorkLink slug="/work/acrm" name="American Computer & Robotics Museums"/>
+          <WorkLink slug="/work/tri" name="Interactive Dataset: the Toxic Release Inventory"/>
+          <WorkLink slug="/work/acrm" name="History at the American Computer & Robotics Museums"/>
         </div>
     </div>
+    </>
   )
 }
