@@ -20,7 +20,7 @@ export default function WorkList({work}) {
                 {name}
                 </h1>
                 <div className='grid grid-flow-col pb-4 grid-rows-2 sm:grid-rows-1'>
-                    {tags.map(t => <p className='border-hot-pink border text-center text-hot-pink rounded-full px-2 mr-2 my-2 group-hover:border-white group-hover:text-white ease-in-out duration-200'>{t}</p>)}
+                    {tags.map(t => <p className='border-hot-pink border text-center text-hot-pink rounded-full px-2 mr-2 my-2 group-hover:border-white group-hover:text-white ease-in-out duration-200' key={t}>{t}</p>)}
                 </div>
             </div>
             </Link>
