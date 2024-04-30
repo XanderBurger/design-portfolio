@@ -13,6 +13,7 @@
     "@p5-wrapper/react": "^4.3.4",
     "@react-spring/web": "^9.7.3",
     "@svgr/webpack": "^8.1.0",
+    "@vercel/analytics": "^1.2.2",
     "next": "14.1.2",
     "next-video": "^0.16.2",
     "p5": "^1.9.2",

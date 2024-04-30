@@ -5,44 +5,6 @@ import triVid from "/videos/tri-vid4.mov"
 import acrmVid from "/videos/acrm-vid2.mov"
 
 
-const getWorkInfo = (slug) => {
-   const info = {
-    "sev" : {
-      title: "Sevilleta Digitized Landscape",
-      images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp"],
-      videos: [],
-      description: <SevDescription/>,
-      prevPage: "acrm",
-      nextPage: "markup"
-      },
-      "markup": {
-         title: "Markup",
-         images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout-7.webp", "/markup/layout-6.webp"],
-         videos: [markupVid],
-         description: <MarkupDescription/>,
-         prevPage: "sev",
-         nextPage: "tri"
-      },
-      "tri": {
-         title: "Interactive Dataset: the Toxic Release Inventory",
-         images: ["/tri/tri1@300x.webp", "/tri/tri2@300x.webp", "/tri/tri3@300x.webp", "/tri/tri4@300x.webp", "/tri/tri5@300x.webp"],
-         videos: [triVid],
-         description: <TRIDescription/>,
-         prevPage: "markup",
-         nextPage: "acrm"
-      },
-      "acrm": {
-         title: "American Computer and Robotics Museum",
-         images: ["/acrm/board.webp", "/acrm/bus.webp", "/acrm/car.webp"],
-         videos: [acrmVid],
-         description: <ACRMDescription/>,
-         prevPage: "tri",
-         nextPage: "sev"
-      }
-   }
-   return info[slug]
-}
-
 const SevDescription = () => {
    return(
       <>
@@ -97,4 +59,48 @@ const ACRMDescription = () => {
 
 }
 
-export {getWorkInfo}
+
+const info = {
+   "sev" : {
+     title: "Sevilleta Digitized Landscape",
+     images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp"],
+     videos: [],
+     description: <SevDescription/>,
+     tags: ["Public Art", "Data Viz"],
+     prevPage: "acrm",
+     nextPage: "markup"
+     },
+     "markup": {
+        title: "Markup",
+        images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout-7.webp", "/markup/layout-6.webp"],
+        videos: [markupVid],
+        description: <MarkupDescription/>,
+        tags: ["UI/UX", "Web Design", "Creative Code", "Branding"],
+        prevPage: "sev",
+        nextPage: "tri"
+     },
+     "tri": {
+        title: "Interactive Dataset: the Toxic Release Inventory",
+        images: ["/tri/tri1@300x.webp", "/tri/tri2@300x.webp", "/tri/tri3@300x.webp", "/tri/tri4@300x.webp", "/tri/tri5@300x.webp"],
+        videos: [triVid],
+        description: <TRIDescription/>,
+        tags: ["Data Viz", "Web Design", "Creative Code"],
+        prevPage: "markup",
+        nextPage: "acrm"
+     },
+     "acrm": {
+        title: "American Computer and Robotics Museum",
+        images: ["/acrm/board.webp", "/acrm/bus.webp", "/acrm/car.webp"],
+        videos: [acrmVid],
+        description: <ACRMDescription/>,
+        tags: ["Web Design", "Creative Code"],
+        prevPage: "tri",
+        nextPage: "sev"
+     }
+  }
+
+const getWorkInfo = (slug) => {
+   return info[slug]
+}
+
+export {getWorkInfo, info}

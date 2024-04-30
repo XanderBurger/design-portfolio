@@ -7,7 +7,14 @@ import Link from 'next/link'
 
 
 export default function Work({params}) {
-  
+
+  const tagColors = {
+    "Public Art": "#f25e17",
+    "Data Viz": "#1ee387",
+    "UI/UX": "#835EB4",
+    "Web Design": "#f5e90c",
+    "Creative Code": "#21d6ff"
+  }
 
   const info = getWorkInfo(params.slug)
   if(!info) notFound()
