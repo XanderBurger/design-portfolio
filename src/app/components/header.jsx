@@ -47,7 +47,7 @@ export default function Header() {
 
   const WideMenu = () => {return (
     <div className="grid w-full h-[80px] grid-flow-col items-center bg-white">
-      <div className="space-x-4 mx-[40px]"><Link href="/"><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px]">*</h1></Link></div>
+      <div className="space-x-4 mx-[40px] "><Link href="/"><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px] leading-[50px] pt-6">*</h1></Link></div>
         <div className="justify-self-end grid grid-flow-col items-center space-x-4 mx-[40px]">
           <NavLink link="/work" linkName="work"/>
           <NavLink link="/about" linkName="About"/>
@@ -73,7 +73,7 @@ export default function Header() {
     return (
     <>
     <div className="relative grid w-full h-[80px] grid-flow-col items-center bg-white z-20 ">
-      <div className="space-x-4 mx-[20px]"><Link href="/" onClick={()=> setShowMenu(false)}><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px]">*</h1></Link></div>
+      <div className="space-x-4 mx-[20px]"><Link href="/" onClick={()=> setShowMenu(false)}><h1 className="ease-in-out duration-700 hover:text-hot-pink text-[72px] leading-[50px]">*</h1></Link></div>
       <h1 className='justify-self-end text-[60px] mx-[20px] mb-[20px] hover:text-hot-pink hover:cursor-pointer' onClick={() => setShowMenu(!showMenu)}>{showMenu ? "–" : "="}</h1>
     </div>
     <animated.div className='absolute bg-white top-[80px] w-full z-10' style={menuSpring}>

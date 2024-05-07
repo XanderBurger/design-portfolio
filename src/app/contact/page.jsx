@@ -12,8 +12,8 @@ export default function Contact() {
         <div>
         <h1 className="text-[52px] lg:text-[72px] sm:text-[52px] font-[500] italic text-center md:leading-[72px] leading-[52px]">Send me an <a href="mailto: xanderbdesign@gmail.com" className="underline hover:text-hot-pink">email</a></h1>
         <div className="flex space-x-[10px] justify-center md:justify-start pt-2">
-        <a className="text-hot-pink underline" href="https://github.com/XanderBurger">GitHub</a>
-        <a className="text-hot-pink underline" href="https://www.linkedin.com/in/xander-burger-25673b28a">LinkedIn</a>
+        <a className="text-hot-pink underline hover:text-black" href="https://github.com/XanderBurger">GitHub</a>
+        <a className="text-hot-pink underline hover:text-black" href="https://www.linkedin.com/in/xander-burger-25673b28a">LinkedIn</a>
         </div>
         </div>
         

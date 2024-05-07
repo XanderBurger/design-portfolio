@@ -32,14 +32,13 @@ const MarkupDescription = () => {
 const TRIDescription = () => {
    return (
       <>
-      <a href="https://tri-web-app.vercel.app/" className="underline text-hot-pink hover:text-black">Project Link</a>
-      <br/>
-      <br/>
       <p>
       The TRI or Toxic Release Inventory is a program run by the EPA to provide transparency on how and where chemicals that are harmful to human health are released into the environment. The program requires facilities to report where, how, and what chemicals are being disposed of. This data is then gathered by the EPA and released to the public.
       </p>
       <br/>
       <p>This project is a series of interactive visualizations made with the TRIs 2021 datasets.</p>
+      <br/>
+      <a href="https://tri-web-app.vercel.app/" className="underline text-hot-pink hover:text-black">Project Link</a>
       </>
    )
 
@@ -48,12 +47,11 @@ const TRIDescription = () => {
 const ACRMDescription = () => {
    return (
       <>
-      <a href="https://xanderburger.github.io/ARCM-webApp/" className="underline text-hot-pink hover:text-black">Project Link</a>
-      <br/>
-      <br/>
       <p>
       The American Computer and Robotics Museum is a gem in Bozeman Montana. It hosts some of the most significant artifacts in computing history ranging from World War 2 era Enigma Machines, early quantum computer chips, computers from the Apollo missions, and everything in between. This is a promotional campaign that contains a digital poster promoting the histories contained in the museum. 
       </p>
+      <br/>
+      <a href="https://xanderburger.github.io/ARCM-webApp/" className="underline text-hot-pink hover:text-black">Project Link</a>
       </>
    )
 
@@ -63,10 +61,11 @@ const ACRMDescription = () => {
 const info = {
    "sev" : {
      title: "Sevilleta Digitized Landscape",
-     images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp"],
+     images: ["/sev/SevProjectCorrected.webp", "/sev/sevSketch1.webp", "/sev/sevSketch2.webp", "/sev/sevSketch3.webp", "/sev/desert.webp", "/sev/lab.webp"],
      videos: [],
      description: <SevDescription/>,
      tags: ["Public Art", "Data Viz"],
+     sentence: "What does data collected on a ecosystem look like?",
      prevPage: "acrm",
      nextPage: "markup"
      },
@@ -76,6 +75,7 @@ const info = {
         videos: [markupVid],
         description: <MarkupDescription/>,
         tags: ["UI/UX", "Web Design", "Creative Code", "Branding"],
+        sentence: "How can AI empower communities?",
         prevPage: "sev",
         nextPage: "tri"
      },
@@ -85,15 +85,18 @@ const info = {
         videos: [triVid],
         description: <TRIDescription/>,
         tags: ["Data Viz", "Web Design", "Creative Code"],
+        sentence: "How can data be accessible?",
         prevPage: "markup",
         nextPage: "acrm"
      },
+
      "acrm": {
         title: "American Computer and Robotics Museum",
         images: ["/acrm/board.webp", "/acrm/bus.webp", "/acrm/car.webp"],
         videos: [acrmVid],
         description: <ACRMDescription/>,
         tags: ["Web Design", "Creative Code"],
+        sentence: "IDK",
         prevPage: "tri",
         nextPage: "sev"
      }
