@@ -11,8 +11,6 @@ export default function ImageGrid({images, videos}) {
     const [fullScreenVideo, setFullScreenVideo] = useState("")
     const [fullScreenImage , setFullScreenImage] = useState("")
 
-    console.log(fullScreenV)
-
     const handleSetFullScreenImage = ( image ) => {
         setFullScreen(true)
         setFullScreenImage(image)

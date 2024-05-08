@@ -69,23 +69,25 @@ const info = {
      prevPage: "acrm",
      nextPage: "markup"
      },
+
      "markup": {
         title: "Markup",
         images: ["/markup/LayoutMockup.webp", "/markup/logo.png", "/markup/layout1.webp", "/markup/layout2.webp","/markup/layout3.webp", "/markup/layout-7.webp", "/markup/layout-6.webp"],
         videos: [markupVid],
         description: <MarkupDescription/>,
         tags: ["UI/UX", "Web Design", "Creative Code", "Branding"],
-        sentence: "How can AI empower communities?",
+        sentence: "Whats the connection between the law and the environment?",
         prevPage: "sev",
         nextPage: "tri"
      },
+     
      "tri": {
         title: "Interactive Dataset: the Toxic Release Inventory",
         images: ["/tri/tri1@300x.webp", "/tri/tri2@300x.webp", "/tri/tri3@300x.webp", "/tri/tri4@300x.webp", "/tri/tri5@300x.webp"],
         videos: [triVid],
         description: <TRIDescription/>,
         tags: ["Data Viz", "Web Design", "Creative Code"],
-        sentence: "How can data be accessible?",
+        sentence: "How can we make important datasets be accessible?",
         prevPage: "markup",
         nextPage: "acrm"
      },
@@ -96,7 +98,7 @@ const info = {
         videos: [acrmVid],
         description: <ACRMDescription/>,
         tags: ["Web Design", "Creative Code"],
-        sentence: "IDK",
+        sentence: "What does the history of computer science look like?",
         prevPage: "tri",
         nextPage: "sev"
      }

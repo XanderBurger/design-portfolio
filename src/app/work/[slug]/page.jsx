@@ -13,7 +13,7 @@ export default function Work({params}) {
   if(!info) notFound()
 
   return (
-    <div className='mt-20'>
+    <div className='mt-28'>
     <h1 className='uppercase text-black text-[60px] leading-[65px] lg:leading-[110px] lg:text-[100px] mx-[20px] md:mx-[40px] font-[500]'>{info.title}</h1>
     <div className='grid pb-4 grid-cols-2 md:grid-cols-4 mx-[20px] md:mx-[40px] gap-2 mb-10'>
       {info.tags.map(t => <p className='border-hot-pink border text-center text-hot-pink rounded-full px-2 group-hover:border-white group-hover:text-white ease-in-out duration-200' key={t}>{t}</p>)}
@@ -25,7 +25,7 @@ export default function Work({params}) {
       <div>{info.description}</div>
     </div>
 
-    {/* <Carousel images={info.images} videos={info.videos}/> */}
+    
     <ImageGrid images={info.images} videos={info.videos}/>
     </div>
       <div className='my-[40px]'>

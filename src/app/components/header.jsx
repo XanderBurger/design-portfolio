@@ -2,8 +2,6 @@
 
 import { useSpring, animated } from '@react-spring/web'
 import Link from "next/link"
-import NameLogo from "../assets/images/svgs/nameLogo.svg"
-import Menu from "../assets/images/svgs/menu.svg"
 import NavLink from "./NavLink"
 import { useState, useEffect } from "react"
 
