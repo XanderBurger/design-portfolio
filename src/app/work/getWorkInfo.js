@@ -57,6 +57,21 @@ const ACRMDescription = () => {
 
 }
 
+const MTIPDescription = () => {
+   return (
+      <>
+      <p>Montana Innovation Partnership (MTIP) helps early-stage tech founders get funding to bring innovative ideas to market.</p>
+      <br/>
+      <p>
+      This new website is designed in reference to the innovative projects that MTIP works on day to day. As well as a restructuring of information with a focus on providing education resources and guides that help founders navigate the confusing world of federal funding. 
+      </p>
+      <br/>
+      <a href="https://www.montanainnovationpartnership.org/" className="underline text-hot-pink hover:text-black">Project Link</a>
+      </>
+   )
+
+}
+
 
 const info = {
    "sev" : {
@@ -89,7 +104,19 @@ const info = {
         tags: ["Data Viz", "Web Design", "Creative Code"],
         sentence: "How can we make important datasets be accessible?",
         prevPage: "markup",
-        nextPage: "acrm"
+        nextPage: "mtip"
+     },
+
+     "mtip":{
+      title: "MTIP Website",
+      images: ["/mtip/heroMTIP.webp", "/mtip/homeMTIP.webp", "/mtip/guideMTIP.webp", "/mtip/resouceMTIP.webp", "/mtip/mailMTIP.webp", "/mtip/blogMTIP.webp"],
+      videos: [],
+      description: <MTIPDescription/>,
+      tags: ["Web Design", "Branding"],
+      sentence: "What does Montana's innovation look like?",
+      prevPage: "tri",
+      nextPage: "acrm"
+
      },
 
      "acrm": {
@@ -99,7 +126,7 @@ const info = {
         description: <ACRMDescription/>,
         tags: ["Web Design", "Creative Code"],
         sentence: "What does the history of computer science look like?",
-        prevPage: "tri",
+        prevPage: "mtip",
         nextPage: "sev"
      }
   }
