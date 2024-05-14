@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
         <div className='grid grid-cols-2 mt-2'>
         <p className='top-[60px] text-[20px]'>Design <span className='text-hot-pink'>+</span> Code</p>
-        <p className='top-[60px] text-[20px] text-hot-pink italic text-right'>*Click to Grow*</p>
+        <p className='top-[60px] text-[20px] text-hot-pink italic text-right'>*Click Anywhere to Grow*</p>
         </div>
         </div>
       </div>
