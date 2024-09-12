@@ -94,7 +94,7 @@ const largeHeader = (
 
 const bookMarquee = (
   <div className='rounded-lg bg-white p-5 overflow-x-hidden'>
-    <h4 className='pb-5 text-lg'>What I've Been Reading</h4>
+    <h4 className='pb-5 text-lg'>What Ive Been Reading</h4>
     <div className='animate-marquee flex overflow-x-hidden rounded-lg'>
       {books1.map((e) => {
         return (
@@ -112,7 +112,7 @@ const bookMarquee = (
 
 const siteMarquee = (
   <div className='rounded-lg bg-white p-5 overflow-x-hidden'>
-    <h4 className='pb-5 text-lg'>Where I've Been on the Web</h4>
+    <h4 className='pb-5 text-lg'>Where Ive Been on the Web</h4>
     <div className='animate-marquee flex overflow-x-hidden rounded-lg'>
       {siteLinks.map((e) => {
         return (

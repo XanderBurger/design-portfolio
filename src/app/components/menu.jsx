@@ -66,7 +66,7 @@ const description = (
   <div className='p-5 rounded-lg bg-white'>
     <p className='font-IBMPlex font-[300] text-2xl'>
       With degrees in <span className='text-hot-pink'>Computer Science</span> &
-      <span className='text-hot-pink'> Graphic Design</span>, I'm interested in
+      <span className='text-hot-pink'> Graphic Design</span>, Im interested in
       how code can improve communication.
     </p>
   </div>
