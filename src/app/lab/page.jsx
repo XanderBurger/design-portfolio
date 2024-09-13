@@ -25,7 +25,7 @@ const p5PlantSketch = (
 const sevDescription = (
   <div className='bg-white rounded-lg p-5 flex justify-center'>
     <p className='text-xl max-w-[700px]'>
-      The fallowing is a project done in collaboration with the Sevilleta
+      The following is a project done in collaboration with the Sevilleta
       National Wildlife Refuge about the collection and transfer of digital
       ecological data.
     </p>
