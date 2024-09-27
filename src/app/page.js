@@ -76,7 +76,7 @@ const mainContent = (
         github
       </a>
       <a
-        href='www.linkedin.com/in/xander-burger-25673b28a'
+        href='https://www.linkedin.com/in/xander-burger-25673b28a'
         className='hover:text-hot-pink hover:cursor-pointer'>
         linkedIn
       </a>
