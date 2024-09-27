@@ -52,7 +52,7 @@ const siteLinks = [
 const mainContent = (
   <div className='bg-white rounded-lg grid h-full overflow-hidden relative p-5 z-10'>
     <p className='font-IBMPlex uppercase text-2xl z-10 bg-light-gray p-2 rounded-lg w-fit h-fit'>
-      HODY!
+      HOWDY!
     </p>
     <div
       id='home-container'
