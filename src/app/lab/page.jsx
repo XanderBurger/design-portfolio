@@ -22,6 +22,42 @@ const p5PlantSketch = (
   </div>
 );
 
+const teleDescription = (
+  <div className='bg-white rounded-lg p-5 flex justify-center'>
+    <p className='text-xl max-w-[700px]'>
+      TELE is an application in progress. Its designed to make graphics
+      programming more accessible and provide a platform to easily build custom
+      graphical task for tool chains. Its great for creative coding and data
+      visualization. Its built on top of Apples Metal graphics API and scripts
+      are written in python.
+    </p>
+  </div>
+);
+
+const teleImg1 = (
+  <div className='bg-white rounded-lg p-5'>
+    <Image
+      className='rounded-lg'
+      src='/tele/Tele_tool_Test.webp'
+      alt='An abstract artwork of digital data'
+      width={1500}
+      height={1000}
+    />
+  </div>
+);
+
+const teleImg2 = (
+  <div className='bg-white rounded-lg p-5'>
+    <Image
+      className='rounded-lg'
+      src='/tele/Tele_example.webp'
+      alt='An abstract artwork of digital data'
+      width={1500}
+      height={1000}
+    />
+  </div>
+);
+
 const sevDescription = (
   <div className='bg-white rounded-lg p-5 flex justify-center'>
     <p className='text-xl max-w-[700px]'>
@@ -89,6 +125,9 @@ export default function Lab() {
         items={[
           largeHeader,
           p5PlantSketch,
+          teleDescription,
+          teleImg1,
+          teleImg2,
           sevDescription,
           sevImg1,
           sevImg2,

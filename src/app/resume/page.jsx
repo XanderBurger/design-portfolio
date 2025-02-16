@@ -21,7 +21,7 @@ const programming = (
           <li>Javascript</li>
           <li>Java</li>
           <li>C</li>
-          <li>SQL</li>
+          <li>Swift</li>
         </ul>
       </div>
       <div className='pr-4'>
@@ -60,7 +60,7 @@ const design = (
         <ul className=' font-[200]'>
           <li>Figma</li>
           <li>Adobe Illustrator</li>
-        <li>Adobe Indesign</li>
+          <li>Adobe Indesign</li>
           <li>Adobe Photoshop</li>
         </ul>
       </div>
