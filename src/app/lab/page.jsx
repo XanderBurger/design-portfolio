@@ -27,7 +27,7 @@ const teleDescription = (
     <p className='text-xl max-w-[700px]'>
       TELE is an application in progress. Its designed to make graphics
       programming more accessible and provide a platform to easily build custom
-      graphical task for tool chains. Its great for creative coding and data
+      graphical task and tool chains. Its great for creative coding and data
       visualization. Its built on top of Apples Metal graphics API and scripts
       are written in python.
     </p>
